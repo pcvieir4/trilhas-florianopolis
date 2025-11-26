@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Explorar Trilhas | Trilhas Floripa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/trilhas-florianopolis/style/style.css" />
+    <script defer src="/trilhas-florianopolis/js/script.js"></script>
+  </head>
+
+  <body>
+
+    <!-- NAVBAR DO SITE PRINCIPAL -->
+    <header class="site-header">
+      <nav class="nav-bar container">
+        <div class="nav-brand">Trilhas Floripa</div>
+
+        <ul class="nav-menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="explorar.html">Trilhas</a></li>
+          <li><a href="index.html#beneficios-section">Benefícios</a></li>
+          <li><a href="index.html#sobre-section">Sobre</a></li>
+        </ul>
+
+        <a href="login.html" class="nav-login-btn">👤 Entrar</a>
+      </nav>
+    </header>
+
+    <!-- HEADER DA PÁGINA -->
+    <header class="section section-light">
+      <div class="container">
+        <h1 style="text-align:center; font-size:2.4rem; color:#064e3b; margin-bottom:10px;">
+          Explore Todas as Trilhas de Florianópolis
+        </h1>
+
+        <p class="section-subtitle">
+          Filtre por região e descubra sua próxima aventura na Ilha da Magia
+        </p>
+      </div>
+    </header>
+
+    <!-- FILTROS -->
+    <div class="section">
+      <div class="container">
+
+        <div class="explore-filter-bar">
+          <label for="filtroRegiao">Região:</label>
+          <select id="filtroRegiao" class="explore-select">
+            <option value="todas">Todas</option>
+            <option value="Norte">Norte da Ilha</option>
+            <option value="Sul">Sul da Ilha</option>
+            <option value="Leste">Leste da Ilha</option>
+            <option value="Centro">Centro</option>
+          </select>
+
+          <label for="filtroDificuldade">Dificuldade:</label>
+          <select id="filtroDificuldade" class="explore-select">
+            <option value="todas">Todas</option>
+            <option value="Leve">Leve</option>
+            <option value="Moderada">Moderada</option>
+            <option value="Difícil">Difícil</option>
+          </select>
+        </div>
+
+        <!-- LISTA DINÂMICA -->
+        <div id="listaTrilhas" class="explore-list"></div>
+
+      </div>
+    </div>
+  </body>
+</html>
