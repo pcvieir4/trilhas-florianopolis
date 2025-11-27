@@ -206,3 +206,21 @@ document.addEventListener("DOMContentLoaded", () => {
     .getElementById("filtroDificuldade")
     .addEventListener("change", renderizarTrilhas);
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const user = JSON.parse(localStorage.getItem("usuarioLogado"));
+
+  const btnLogin = document.getElementById("btnLogin");
+  const saudacao = document.getElementById("saudacaoUsuario");
+
+  if (user) {
+    // Oculta o botão de login
+    if (btnLogin) btnLogin.style.display = "none";
+
+    // Mostra saudação
+    if (saudacao) {
+      saudacao.style.display = "inline-block";
+      saudacao.textContent = `Olá, ${user.nome.split(" ")[0]} `;
+    }
+  }
+});

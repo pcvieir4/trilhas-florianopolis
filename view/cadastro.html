@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <title>Criar Conta | Trilhas Floripa</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -43,7 +44,10 @@
             <input id="senha" type="password" placeholder="Crie uma senha" />
           </div>
 
-          <button class="auth-btn">Criar conta</button>
+          <!-- 🔥 Botão conectado ao LocalStorage -->
+          <button class="auth-btn" onclick="cadastrarUsuario()">
+            Criar conta
+          </button>
 
           <p class="auth-link">
             Já tem conta?
@@ -52,5 +56,8 @@
         </div>
       </div>
     </div>
+
+    <!-- Script LOCALSTORE -->
+    <script src="/trilhas-florianopolis/js/auth.js"></script>
   </body>
 </html>
