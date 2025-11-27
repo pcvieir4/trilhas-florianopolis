@@ -1,189 +1,256 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <title>Trilhas Floripa</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <title>Trilhas Floripa</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <!--
+      A meta viewport garante que o layout se adapte a celulares,
+      tablets e desktops.
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="stylesheet" href="/trilhas-florianopolis/style/style.css" />
-  <script defer src="/trilhas-florianopolis/js/script.js"></script>
-</head>
+    <!-- Fonte Google usada em todo o site -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-<body>
+    <!-- Arquivo CSS principal do projeto -->
+    <link rel="stylesheet" href="/trilhas-florianopolis/style/style.css" />
 
-  <!-- ===================== HEADER / NAVBAR ===================== -->
-  <header class="site-header">
-    <nav class="nav-bar container">
-      <div class="nav-brand">Trilhas Floripa</div>
+    <!-- Arquivo JavaScript principal do projeto -->
+    <script defer src="/trilhas-florianopolis/js/script.js"></script>
+  </head>
 
-      <ul class="nav-menu">
-        <li><a href="#hero-section">Início</a></li>
-        <li><a href="explorar.html">Trilhas</a></li>
-        <li><a href="#beneficios-section">Benefícios</a></li>
-        <li><a href="#sobre-section">Sobre</a></li>
-      </ul>
+  <body>
+    <!--  NAVBAR  -->
 
-      <a href="login.html" class="nav-login-btn">👤 Entrar</a>
-    </nav>
-  </header>
+    <!-- HEADER que contém a barra de navegação -->
+    <header class="site-header">
+      <nav class="nav-bar container">
+        <!-- Logo/texto principal do topo -->
+        <div class="nav-brand">Trilhas Floripa</div>
 
-  <!-- ===================== HERO ===================== -->
-  <section id="hero-section" class="hero-banner">
-    <div class="hero-overlay"></div>
+        <!-- Menu de navegação com links para seções -->
+        <ul class="nav-menu">
+          <li><a href="#hero-section">Início</a></li>
+          <li><a href="explorar.html">Trilhas</a></li>
+          <li><a href="#beneficios-section">Benefícios</a></li>
+          <li><a href="#sobre-section">Sobre</a></li>
+        </ul>
 
-    <div class="hero-inner container">
-      <h1 class="hero-title">Descubra as Trilhas de Florianópolis</h1>
+        <!-- Botão de login no canto direito -->
+        <a href="login.html" class="nav-login-btn">👤 Entrar</a>
+      </nav>
+    </header>
 
-      <p class="hero-description">
-        Conecte-se com a natureza e explore paisagens deslumbrantes<br />
-        na Ilha da Magia
-      </p>
+    <!--  HERO -->
 
-      <div class="hero-actions">
-        <a href="#trilhas-section" class="btn-primary">
-          Explorar Trilhas →
-        </a>
-        <a href="cadastro.html" class="btn-secondary">
-          Criar Conta
-        </a>
-      </div>
-    </div>
-  </section>
+    <!-- Seção principal/banner com imagem ao fundo -->
+    <section id="hero-section" class="hero-banner">
+      <!-- Overlay escurecendo a imagem do fundo -->
+      <div class="hero-overlay"></div>
 
-  <!-- ===================== BENEFÍCIOS ===================== -->
-  <section id="beneficios-section" class="benefits-section">
-    <div class="container">
-      <h2 class="section-title">Benefícios das Trilhas</h2>
-      <p class="section-subtitle">
-        Praticar trilhas traz inúmeros benefícios para sua saúde física e mental
-      </p>
+      <!-- Conteúdo do banner -->
+      <div class="hero-inner container">
+        <h1 class="hero-title">Descubra as Trilhas de Florianópolis</h1>
 
-      <div class="benefits-list">
-
-        <div class="benefit-item">
-          <div class="benefit-icon">💚</div>
-          <h3 class="benefit-title">Saúde Cardiovascular</h3>
-          <p class="benefit-text">
-            Melhora a circulação sanguínea e fortalece o coração de forma natural.
-          </p>
-        </div>
-
-        <div class="benefit-item">
-          <div class="benefit-icon">🧠</div>
-          <h3 class="benefit-title">Bem-estar Mental</h3>
-          <p class="benefit-text">
-            Reduz o estresse e a ansiedade, proporcionando paz e tranquilidade.
-          </p>
-        </div>
-
-        <div class="benefit-item">
-          <div class="benefit-icon">🏃</div>
-          <h3 class="benefit-title">Condicionamento Físico</h3>
-          <p class="benefit-text">
-            Desenvolve resistência, força muscular e melhora o equilíbrio.
-          </p>
-        </div>
-
-        <div class="benefit-item">
-          <div class="benefit-icon">🤝</div>
-          <h3 class="benefit-title">Conexão Social</h3>
-          <p class="benefit-text">
-            Oportunidade de conhecer pessoas e fazer novos amigos durante as trilhas.
-          </p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== TRILHAS FAMOSAS ===================== -->
-  <section id="trilhas-section" class="featured-trails">
-    <div class="container">
-
-      <h2 class="section-title">Trilhas Famosas em Floripa</h2>
-      <p class="section-subtitle">
-        Conheça as trilhas mais procuradas e deslumbrantes da ilha
-      </p>
-
-      <div class="trails-grid">
-
-        <article class="trail-card">
-          <div class="trail-card-image">
-            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/11/29/8d/img-20170103-wa0029-largejpg.jpg?w=900&h=-1&s=1" />
-          </div>
-          <div class="trail-card-content">
-            <h3 class="trail-name">Lagoinha do Leste</h3>
-            <div class="trail-info">
-              <span>📍 Sul</span><span>⏱ 2–3h</span>
-            </div>
-            <p class="trail-description">
-              Praia paradisíaca e isolada, acessível apenas por trilha.
-            </p>
-           <a href="https://www.tripadvisor.com.br/Attraction_Review-g303576-d553868-Reviews-Lagoinha_do_Leste-Florianopolis_State_of_Santa_Catarina.html"> <button class="btn-trail">Ver Detalhes</button></a>
-          </div>
-        </article>
-
-        <article class="trail-card">
-          <div class="trail-card-image">
-            <img src="https://blog.uber-cdn.com/cdn-cgi/image/width=2160,quality=80,onerror=redirect,format=auto/wp-content/uploads/2019/06/o-que-conhecer-em-florianopolis.jpg" />
-          </div>
-          <div class="trail-card-content">
-            <h3 class="trail-name">Morro da Cruz</h3>
-            <div class="trail-info">
-              <span>📍 Centro</span><span>⏱ 40min</span>
-            </div>
-            <p class="trail-description">
-              Vista 360° da ilha de Florianópolis, perfeita para admirar o pôr do sol.
-            </p>
-            <a href="https://www.tripadvisor.com.br/Attraction_Review-g303576-d2362720-Reviews-Mirante_do_Morro_da_Cruz-Florianopolis_State_of_Santa_Catarina.html"><button class="btn-trail">Ver Detalhes</button></a>
-          </div>
-        </article>
-
-        <article class="trail-card">
-          <div class="trail-card-image">
-            <img src="https://imgmd.net/images/v1/guia/1677766/costa-da-lagoa.jpg" />
-          </div>
-          <div class="trail-card-content">
-            <h3 class="trail-name">Costa da Lagoa</h3>
-            <div class="trail-info">
-              <span>📍 Centro</span><span>⏱ 2–3h</span>
-            </div>
-            <p class="trail-description">
-              Trilha plana que margeia a Lagoa da Conceição.
-            </p>
-           <a href="https://www.tripadvisor.com.br/Attraction_Review-g303576-d4037868-Reviews-Costa_da_Lagoa-Florianopolis_State_of_Santa_Catarina.html"> <button class="btn-trail">Ver Detalhes</button></a>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== SOBRE ===================== -->
-  <section id="sobre-section" class="about-section">
-    <div class="container">
-      <h2 class="section-title">Trilhas em Florianópolis</h2>
-
-      <div class="about-text">
-        <p>Florianópolis, conhecida como Ilha da Magia, é um verdadeiro paraíso...</p>
-        <p>As trilhas de Floripa proporcionam experiências únicas...</p>
-        <p>A diversidade de ambientes é impressionante...</p>
-      </div>
-
-      <div class="about-warning">
-        <h3 class="warning-title">Importante: Respeite a Natureza</h3>
-        <p class="warning-text">
-          Ao fazer trilhas, lembre-se de não deixar lixo...
+        <p class="hero-description">
+          Conecte-se com a natureza e explore paisagens deslumbrantes<br />
+          na Ilha da Magia
         </p>
+
+        <!-- Botões principais do banner -->
+        <div class="hero-actions">
+          <a href="#trilhas-section" class="btn-primary">
+            Explorar Trilhas →
+          </a>
+          <a href="cadastro.html" class="btn-secondary"> Criar Conta </a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer class="site-footer">
-    <div class="container">© 2025 Trilhas Floripa • Projeto acadêmico</div>
-  </footer>
+    <!--  BENEFÍCIOS  -->
 
-</body>
+    <!-- Seção explicando benefícios de fazer trilhas -->
+    <section id="beneficios-section" class="benefits-section">
+      <div class="container">
+        <h2 class="section-title">Benefícios das Trilhas</h2>
+        <p class="section-subtitle">
+          Praticar trilhas traz inúmeros benefícios para sua saúde física e
+          mental
+        </p>
+
+        <!-- Lista com 4 cards de benefícios -->
+        <div class="benefits-list">
+          <div class="benefit-item">
+            <div class="benefit-icon">💚</div>
+            <h3 class="benefit-title">Saúde Cardiovascular</h3>
+            <p class="benefit-text">
+              Melhora a circulação sanguínea e fortalece o coração de forma
+              natural.
+            </p>
+          </div>
+
+          <div class="benefit-item">
+            <div class="benefit-icon">🧠</div>
+            <h3 class="benefit-title">Bem-estar Mental</h3>
+            <p class="benefit-text">
+              Reduz o estresse e a ansiedade, proporcionando paz e
+              tranquilidade.
+            </p>
+          </div>
+
+          <div class="benefit-item">
+            <div class="benefit-icon">🏃</div>
+            <h3 class="benefit-title">Condicionamento Físico</h3>
+            <p class="benefit-text">
+              Desenvolve resistência, força muscular e melhora o equilíbrio.
+            </p>
+          </div>
+
+          <div class="benefit-item">
+            <div class="benefit-icon">🤝</div>
+            <h3 class="benefit-title">Conexão Social</h3>
+            <p class="benefit-text">
+              Oportunidade de conhecer pessoas e fazer novos amigos durante as
+              trilhas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  TRILHAS FAMOSAS  -->
+
+    <section id="trilhas-section" class="featured-trails">
+      <div class="container">
+        <h2 class="section-title">Trilhas Famosas em Floripa</h2>
+        <p class="section-subtitle">
+          Conheça as trilhas mais procuradas e deslumbrantes da ilha
+        </p>
+
+        <!-- GRID contendo os cards das trilhas -->
+        <div class="trails-grid">
+          <!-- Card 1 -->
+          <article class="trail-card">
+            <div class="trail-card-image">
+              <img
+                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/11/29/8d/img-20170103-wa0029-largejpg.jpg?w=900&h=-1&s=1"
+              />
+            </div>
+
+            <div class="trail-card-content">
+              <h3 class="trail-name">Lagoinha do Leste</h3>
+
+              <!-- Localização e duração -->
+              <div class="trail-info">
+                <span>📍 Sul</span><span>⏱ 2–3h</span>
+              </div>
+
+              <p class="trail-description">
+                Praia paradisíaca e isolada, acessível apenas por trilha.
+              </p>
+
+              <!-- Link externo para TripAdvisor -->
+              <a
+                href="https://www.tripadvisor.com.br/Attraction_Review-g303576-d553868-Reviews-Lagoinha_do_Leste-Florianopolis_State_of_Santa_Catarina.html"
+              >
+                <button class="btn-trail">Ver Detalhes</button></a
+              >
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="trail-card">
+            <div class="trail-card-image">
+              <img
+                src="https://blog.uber-cdn.com/cdn-cgi/image/width=2160,quality=80,onerror=redirect,format=auto/wp-content/uploads/2019/06/o-que-conhecer-em-florianopolis.jpg"
+              />
+            </div>
+
+            <div class="trail-card-content">
+              <h3 class="trail-name">Morro da Cruz</h3>
+
+              <div class="trail-info">
+                <span>📍 Centro</span><span>⏱ 40min</span>
+              </div>
+
+              <p class="trail-description">
+                Vista 360° da ilha de Florianópolis, perfeita para admirar o pôr
+                do sol.
+              </p>
+
+              <a
+                href="https://www.tripadvisor.com.br/Attraction_Review-g303576-d2362720-Reviews-Mirante_do_Morro_da_Cruz-Florianopolis_State_of_Santa_Catarina.html"
+                ><button class="btn-trail">Ver Detalhes</button></a
+              >
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="trail-card">
+            <div class="trail-card-image">
+              <img
+                src="https://imgmd.net/images/v1/guia/1677766/costa-da-lagoa.jpg"
+              />
+            </div>
+
+            <div class="trail-card-content">
+              <h3 class="trail-name">Costa da Lagoa</h3>
+
+              <div class="trail-info">
+                <span>📍 Centro</span><span>⏱ 2–3h</span>
+              </div>
+
+              <p class="trail-description">
+                Trilha plana que margeia a Lagoa da Conceição.
+              </p>
+
+              <a
+                href="https://www.tripadvisor.com.br/Attraction_Review-g303576-d4037868-Reviews-Costa_da_Lagoa-Florianopolis_State_of_Santa_Catarina.html"
+              >
+                <button class="btn-trail">Ver Detalhes</button></a
+              >
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE  -->
+
+    <section id="sobre-section" class="about-section">
+      <div class="container">
+        <h2 class="section-title">Trilhas em Florianópolis</h2>
+
+        <!-- Três parágrafos explicativos -->
+        <div class="about-text">
+          <p>
+            Florianópolis, conhecida como Ilha da Magia, é um verdadeiro
+            paraíso...
+          </p>
+          <p>As trilhas de Floripa proporcionam experiências únicas...</p>
+          <p>A diversidade de ambientes é impressionante...</p>
+        </div>
+
+        <!-- Box com alerta sobre preservação da natureza -->
+        <div class="about-warning">
+          <h3 class="warning-title">Importante: Respeite a Natureza</h3>
+          <p class="warning-text">
+            Ao fazer trilhas, lembre-se de não deixar lixo...
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- ======================== FOOTER ========================== -->
+    <!-- ========================================================= -->
+
+    <footer class="site-footer">
+      <div class="container">© 2025 Trilhas Floripa • Projeto acadêmico</div>
+    </footer>
+  </body>
 </html>
